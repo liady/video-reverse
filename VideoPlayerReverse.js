@@ -26,12 +26,13 @@ export default class VideoPlayerReverse {
   };
 
   rewindVideo = () => {
+    const REWIND_FACTOR = 1.3;
     const video = this.video;
     const innerRewind = (elapsed) => {
       if (video.currentTime === 0 || !this.rewinding) {
         return;
       } else {
-        video.currentTime += -(((elapsed || 40) * 1.3) / 1000);
+        video.currentTime += -(((elapsed || 40) * REWIND_FACTOR) / 1000);
         let handle;
         const start = new Date().getTime();
         video.requestVideoFrameCallback(() => {

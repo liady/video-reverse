@@ -1,7 +1,8 @@
 # Video Reverser
 > A utility to run videos in "boomernag mode" in loop
 
-## Check it [here](https://liady.github.io/video-reverse/)
+## Check it online
+You can play with it [here](https://liady.github.io/video-reverse/).
 
 ## Running it locally
 1. Clone the repo.
